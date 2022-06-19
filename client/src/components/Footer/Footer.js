@@ -1,5 +1,7 @@
 import React from 'react';
+
 import Container from '../Container/Container';
+
 import styles from './Footer.module.scss';
 
 const Footer = () => {
@@ -7,7 +9,7 @@ const Footer = () => {
   return (
     <Container>
       <div className={styles.root}>
-        <p>© 2022 Mariana</p>
+        <p>© 2022 MarianaRivasMall</p>
       </div>
     </Container>
   );
