@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
-
 import { NavLink, Link } from 'react-router-dom';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faCartShopping, faBars } from '@fortawesome/free-solid-svg-icons';
-
 import styles from './NavBar.module.scss';
-
 import clsx from 'clsx';
 
 const Navbar = () => {

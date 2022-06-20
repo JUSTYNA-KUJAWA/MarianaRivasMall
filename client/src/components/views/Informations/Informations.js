@@ -12,7 +12,6 @@ const Informations = () => {
           <li><NavLink to="/">About me</NavLink></li>
           <li><NavLink to="/">Policy</NavLink></li>
           <li><NavLink to="/">Conditions</NavLink></li>
-          <li><NavLink to="/">Online support</NavLink></li>
         </ul>
       </div>
       <div className={styles.links}>
@@ -21,7 +20,6 @@ const Informations = () => {
           <li><NavLink to="/">Login</NavLink></li>
           <li><NavLink to="/">My cart</NavLink></li>
           <li><NavLink to="/">Wishlist</NavLink></li>
-          <li><NavLink to="/">Checkout</NavLink></li>
         </ul>
       </div>
       <div className={styles.links}>

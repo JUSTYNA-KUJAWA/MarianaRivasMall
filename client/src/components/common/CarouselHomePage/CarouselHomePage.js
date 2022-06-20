@@ -9,7 +9,6 @@ const CarouselHomePage = ({ image_1, image_2}) => (
     <Carousel interval={7000} showThumbs={false} showStatus={false} autoPlay={true} autoFocus={true} infiniteLoop={true} >
       <div className={styles.slideWrapper}>
         <img src={image_1} alt='' />
-
       </div>
       <div className={styles.slideWrapper}>
         <img src={image_2} alt='' />
