@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className={styles.root}>
       <Hero />
-      <Container>
+      <Container>        
         <Description />
         <Message />
         <Gallery />

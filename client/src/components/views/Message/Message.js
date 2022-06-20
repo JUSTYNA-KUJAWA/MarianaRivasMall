@@ -11,12 +11,13 @@ const Message = () => {
       <div className={styles.text}>
         <img alt="mariana" src="images/mariana/mariana.png"/>
       </div>
-      <div className={styles.text}>
-        <p>Photographe / Plasticienne</p>
-        <p>Knowledge and understanding of two/three quite different cultures. Find common ground between them and bring them closer rather than apart.
-            I can take the positives of each of these cultures to my advantage. American-style communication and sales, French conceptualization and depth and Latin joy.</p>
-      </div>
       <div className={styles.socialMedia}>
+        <p>Photographe / Plasticienne</p>
+        <p>Knowledge and understanding of two/three quite different cultures.</p>
+        <p>Find common ground between them and bring them closer rather than apart.</p>
+        <p>I can take the positives of each of these cultures to my advantage.</p>
+        <p>American-style communication and sales.</p> 
+        <p>French conceptualization and depth and Latin joy.</p>
         <h4>Follow me on social media</h4>
         <NavLink to="/"><img alt="logo" src="/images/home/logo.png" /></NavLink>
         <ul>

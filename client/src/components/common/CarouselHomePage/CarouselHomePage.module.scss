@@ -1,0 +1,41 @@
+@import '../../../styles/settings.scss';
+
+.carouselContainer{
+  position: relative;
+
+  .textWrapper {
+    position: absolute;
+    z-index: 10;
+    color: black;
+    top: calc(40vh - 95px);
+    right: 0;
+    left: 0;
+    text-align: center;
+
+    p:first-child {
+      font-size: ($base-size * 10);
+      font-weight: bold;
+      letter-spacing: 12px;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    p:nth-child(2) {
+      font-size: ($base-size * 4);
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 5px #000;
+    }
+  }
+
+  .slideWrapper {
+    height: calc(100vh - 190px);
+    min-height: 768px;
+    position: relative;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      object-position: center;
+      filter: brightness(90%);
+    }
+  }
+}
