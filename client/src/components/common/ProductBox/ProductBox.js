@@ -9,7 +9,7 @@ const ProductBox = ({ basePrice, images, name, mainCategory, _id }) => {
     <Link to={`/${mainCategory}/${_id}`}>
       <div className={styles.productContainer}>
         <div className={styles.imageWrapper}>
-          <img alt='' src={`${process.env.PUBLIC_URL}/images/${mainCategory}/${images[0]}`} />
+          <img alt='' src={`${process.env.PUBLIC_URL}/images/products/${mainCategory}/${images[0]}`} />
         </div>
         <div className={styles.textWrapper}>
           <p>{name}</p>

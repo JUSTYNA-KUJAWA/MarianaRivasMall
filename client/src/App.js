@@ -29,7 +29,7 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           <Route path='/ceramique' element={<Ceramique />} />
          
-          <Route path='/art' element={<Arts />} />
+          <Route path='/arts' element={<Arts />} />
           <Route path='/paint' element={<Paint />} />
           <Route path='/books' element={<Books />} />
           <Route path='/about' element={<About />} />
@@ -38,7 +38,6 @@ const App = () => {
           <Route path="*" element={<NotFound />}
           />
         </Routes>
-        <Footer/>
       </MainLayout>
     </BrowserRouter>
   );

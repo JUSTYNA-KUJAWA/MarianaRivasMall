@@ -32,6 +32,7 @@
   .navLinks {
     @include flex(row, space-between, center);
     position: relative;
+    color:white;
     ul {
       display: flex;
       padding: 0;
@@ -55,6 +56,14 @@
           }
         }
       }
+    }
+    .h3{
+          color:white;
+
+          &:hover {
+            color: orange;
+          }
+
     }
 
     .button {

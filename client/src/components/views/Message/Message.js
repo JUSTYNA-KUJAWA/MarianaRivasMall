@@ -14,7 +14,7 @@ const Message = () => {
       <div className={styles.socialMedia}>
         <p>Photographe / Plasticienne</p>
         <p>Knowledge and understanding of two/three quite different cultures.</p>
-        <p>Find common ground between them and bring them closer rather than apart.</p>
+        <p>Find common ground between them and bring them closer.</p>
         <p>I can take the positives of each of these cultures to my advantage.</p>
         <p>American-style communication and sales.</p> 
         <p>French conceptualization and depth and Latin joy.</p>

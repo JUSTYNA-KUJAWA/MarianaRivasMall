@@ -7,7 +7,7 @@ const Description = () => {
     <div className={styles.root}>
       <div className={styles.text}>
         <p>COLOR THIS CLUMSINESS</p>
-        <p>Coloring book for the highly creative clumsy</p>
+        <p>Coloring book for the highly creative clumsy...</p>
       </div>
     </div>
   );
