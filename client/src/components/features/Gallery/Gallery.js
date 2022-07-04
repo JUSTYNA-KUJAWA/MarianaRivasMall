@@ -1,38 +1,49 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Container from '../../common/Container/Container';
+import GalleryProduct from '../GalleryProduct/GalleryProduct';
 import styles from './Gallery.module.scss';
 
 const Gallery = () => {
 
+  const galleryItems = [
+    {
+      category: 'Ceramique',
+      alt: 'tools',
+      img: '/images/newArrivals/ceramique.png',
+      banner: 'small',
+      line: 'Ceramic',
+    },
+    {
+      category: 'Paint',
+      alt: 'handmade',
+      img: '/images/newArrivals/peinture.png',
+      banner: 'small',
+      line: 'Paints',
+    },
+    {
+      category: 'Arts',
+      alt: 'artictic',
+      img: '/images/newArrivals/peinture1.png',
+      banner: 'small',
+      line: 'Arts',
+    },
+  ];
+
   return (
     <Container>
-      <p className={styles.gallery}>My products</p>
+      <p className={styles.arrivals}>My Products</p>
       <div className={styles.root}>
-        <div className={styles.element}>
-          <Link to="/category/Ceramique">
-            <img alt="ceramique" src="/images/newArrivals/ceramique.png"/>
-            <div className={styles.photoSmall}>
-              <p>Ceramique</p>
-            </div>
-          </Link>
-        </div>
-        <div className={styles.element}>
-          <Link to="/category/Paint">
-            <img alt="paints" src="/images/newArrivals/peinture.png"/>
-            <div className={styles.photoSmall}>
-              <p>Paints</p>
-            </div>
-          </Link>
-        </div>
-        <div className={styles.element}>
-          <Link to="/category/Art">
-            <img alt="paints1" src="/images/newArrivals/peinture1.png"/>
-            <div className={styles.photoSmall}>
-              <p>Art</p>
-            </div>
-          </Link>
-        </div>
+        {
+          galleryItems.map(item=> (
+            <GalleryProduct
+              key={item.img}
+              category={item.category}
+              alt={item.alt}
+              img={item.img}
+              banner={item.banner}
+              line={item.line}
+            />))
+        }
       </div>
     </Container>
   );

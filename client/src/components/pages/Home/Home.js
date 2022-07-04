@@ -3,10 +3,9 @@ import Hero from '../../views/Hero/Hero';
 import Description from '../../views/Description/Description';
 import Container from '../../common/Container/Container';
 import Message from '../../views/Message/Message';
-import NewArrivals from '../../features/NewArrivals/NewArrivals';
+import NewArrivals from '../../pages/NewArrivals/NewArrivals';
 import styles from './Home.module.scss';
 import Gallery from '../../features/Gallery/Gallery';
-import Informations from '../../views/Informations/Informations';
 
 const Home = () => {
 
@@ -18,7 +17,6 @@ const Home = () => {
         <Message />
         <Gallery />
         <NewArrivals />
-        <Informations />
       </Container>
     </div>
   );

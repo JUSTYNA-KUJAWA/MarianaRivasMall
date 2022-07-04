@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { API_URL } from '../config';
+import initialState from './productInitialState';
 
 /* selectors */
 export const getAllProducts = ({products}) => products.data;
@@ -16,6 +17,7 @@ const createActionName = name => `app/${reducerName}/${name}`;
 const START_REQUEST = createActionName('START_REQUEST');
 const END_REQUEST = createActionName('END_REQUEST');
 const ERROR_REQUEST = createActionName('ERROR_REQUEST');
+
 const LOAD_PRODUCTS = createActionName('LOAD_PRODUCTS');
 
 /* action creators */
@@ -23,6 +25,7 @@ const LOAD_PRODUCTS = createActionName('LOAD_PRODUCTS');
 export const startRequest = payload => ({ payload, type: START_REQUEST });
 export const endRequest = payload => ({ payload, type: END_REQUEST });
 export const errorRequest = payload => ({ payload, type: ERROR_REQUEST });
+
 export const loadProducts = payload => ({ payload, type: LOAD_PRODUCTS });
 
 /* thunk creators */
@@ -43,12 +46,6 @@ export const loadProductsRequest = () => {
   };
 };
 
-/* Initial State */
-
-const initialState = {
-  data: [],
-  requests: [],
-};
 
 /* reducer */
 export const reducer = (statePart = initialState, action = {}) => {

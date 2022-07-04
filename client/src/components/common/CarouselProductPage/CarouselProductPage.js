@@ -7,10 +7,10 @@ import styles from './CarouselProductPage.module.scss';
 const CarouselProductPage = ({ image_1, image_2}) => (
   <div className={styles.carouselContainer}>
     <Carousel interval={7000} showThumbs={false} showStatus={false} autoPlay={true} autoFocus={true} infiniteLoop={true} >
-      <div className={styles.slideWrapper}>
+      <div className={styles.slide}>
         <img src={image_1} alt='' />
       </div>
-      <div className={styles.slideWrapper}>
+      <div className={styles.slide}>
         <img src={image_2} alt='' />
       </div>
     </Carousel>

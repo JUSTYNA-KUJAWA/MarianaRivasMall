@@ -4,6 +4,7 @@
 .cartProduct {
   @include flex(row, center, center);
   margin-top: 20px;
+  border: 2px solid orange;
 
   .imgContainer {
     flex: 1;

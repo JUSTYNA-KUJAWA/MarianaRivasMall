@@ -14,7 +14,7 @@ const ContactForm = () => {
           <h3>phone:</h3>
           <p>07 87 62 55 43</p>
         </div>  
-        <form>
+        <form className={styles.form}>
           <div className={styles.contact}>
             <label htmlFor="name">Your Name:</label>
             <input className={styles.input} type="text" id="name" required />

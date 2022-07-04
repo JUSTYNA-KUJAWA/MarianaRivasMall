@@ -2,19 +2,22 @@
 @import '../../../styles/settings.scss';
 
 .button {
-  background-color: $color-gray; /* Green */
-  border: none;
-  color: $color-white;
-  padding: 15px 10px;
-  width: 160px;
+  background-color: rgb(244, 212, 152);
+  border-radius: 2px;
+  color:black;
+  padding: 15px 15px;
+  width: 170px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
   transition: $transition;
-  margin-bottom: 15px;
+  margin: 24px auto 0 auto;
+  line-height: 15px;
+  background-position: 100% 0;
+  background-size: 300%;
 
   &:hover {
-    background-color: darken($color-gray, 20%);
+    background-color: rgb(241, 164, 136);
   }
 }

@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './Message.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faInstagram, faFacebook, faPinterest } from '@fortawesome/free-brands-svg-icons';
-import { NavLink } from 'react-router-dom';
+import { faTwitter, faInstagram, faFacebook, faTiktok} from '@fortawesome/free-brands-svg-icons';
+import { NavLink, Link } from 'react-router-dom';
+
 
 const Message = () => {
 
@@ -21,10 +22,19 @@ const Message = () => {
         <h4>Follow me on social media</h4>
         <NavLink to="/"><img alt="logo" src="/images/home/logo.png" /></NavLink>
         <ul>
-          <li><button className={styles.button}><FontAwesomeIcon icon={faTwitter} /></button></li>
-          <li><button className={styles.button}><FontAwesomeIcon icon={faInstagram} /></button></li>
-          <li><button className={styles.button}><FontAwesomeIcon icon={faFacebook} /></button></li>
-          <li><button className={styles.button}><FontAwesomeIcon icon={faPinterest} /></button></li>
+          <li>
+            <Link to="//www.instagram.com/marianarivasmaal/">
+              <FontAwesomeIcon icon={faInstagram}  />
+            </Link></li>
+          <li>
+            <Link to="//twitter.com/marsirivas">
+              <FontAwesomeIcon icon= {faTwitter} /></Link></li>
+          <li>
+            <Link to="//www.facebook.com/marsi.rivas">
+              <FontAwesomeIcon icon={faFacebook} /></Link></li>
+          <li>
+            <Link to="//www.tiktok.com/@marianarivasmaal?is_from_webapp=1&sender_device=pc">
+              <FontAwesomeIcon icon={faTiktok} /></Link></li>
         </ul>
       </div>
     </div>
