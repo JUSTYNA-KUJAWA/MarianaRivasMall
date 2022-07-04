@@ -16,8 +16,7 @@ exports.getAllProducts = async (req, res) => {
 
 exports.getProductById = async (req, res) => {
   try {
-    const result = await Product
-      .findById(req.params.id);
+    const result = await Product .findById(req.params.id);
     if(!result) res.status(404).json({ product: 'Not found' });
     else res.json(result);
   }
@@ -28,10 +27,10 @@ exports.getProductById = async (req, res) => {
 };
 
 exports.addNewProduct = async (req, res) => {
-  const { name, price, description, color, img, sizes, variants, categories } = req.body;
+  const { name, price, description, color, img, size, variants, categories } = req.body;
 
   try {
-    const newProduct = new Product({ name, price, description, color, img, sizes, variants, categories });
+    const newProduct = new Product({ name, price, description, color, img, size, variants, categories });
     await newProduct.save();
     res.json(newProduct);
   } catch(err) {
@@ -41,7 +40,7 @@ exports.addNewProduct = async (req, res) => {
 };
 
 exports.editProduct = async (req, res) => {
-  const { name, price, description, color, img, sizes, variants, categories } = req.body;
+  const { name, price, description, color, img, size, variants, categories } = req.body;
 
   try {
     const product = await product.findById(req.params.id);
@@ -51,7 +50,7 @@ exports.editProduct = async (req, res) => {
       product.description = description;
       product.color = color;
       product.img = img;
-      product.sizes = sizes;
+      product.size = size;
       product.variants = variants;
       product.categories = categories;
       await product.save();
