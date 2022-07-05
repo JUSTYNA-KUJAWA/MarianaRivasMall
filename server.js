@@ -15,6 +15,11 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(sslRedirect());
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, '/client/build')));
+app.use(express.static(path.join(__dirname, '/client/public')));
+
 /* API ENDPOINTS */
 app.use('/api', productsRoutes);
 app.use('/api', ordersRoutes);
