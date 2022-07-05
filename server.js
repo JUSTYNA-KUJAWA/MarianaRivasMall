@@ -31,13 +31,17 @@ app.use('*', (req, res) => {
   res.sendFile(path.join(__dirname, '/client/build/index.html'));
 });
 
-let dbUri = '';
 
 /* MONGOOSE */
 
-dbUri = 'mongodb://localhost:27017/mariana';
+const NODE_ENV = process.env.MONGODB_URI;
+let dbUri = '';
 
-mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true });
+
+if(NODE_ENV === 'production') dbUri = `mongodb+srv://JUSTI:test123@cluster0.epgpr.mongodb.net/mariana?retryWrites=true&w=majority`;
+  else dbUri = 'mongodb://localhost:27017/mariana';
+ 
+  mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
 db.once('open', () => {
@@ -53,3 +57,4 @@ const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
+
