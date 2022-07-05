@@ -20,5 +20,8 @@
     "postinstall": "npm run build",
     "start": "node server.js",
     "build": "cd client && yarn install && yarn build"
+  },
+  "engines": {
+    "node": "14.18.1"
   }
 }

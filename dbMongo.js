@@ -64,7 +64,6 @@ db.products.insertMany([
       "/images/products/ceramique/ceramic5.jpg",
       "/images/products/ceramique/ceramic5.jpg",
       "/images/products/ceramique/ceramic5.jpg",
-
     ],
     price: 29,
     description: "Etiam sollicitudin, nisl ut vehicula ornare, sem magna imperdiet elit, id finibus magna ligula at odio. Morbi est elit, maximus sit amet justo in, luctus facilisis urna. Nullam ut bibendum risus, at tristique erat. Mauris vestibulum condimentum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus accumsan mi mollis massa luctus tincidunt. Proin ullamcorper est in enim porta, nec aliquam metus hendrerit.",
