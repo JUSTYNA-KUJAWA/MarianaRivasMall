@@ -17,7 +17,9 @@
     "react-bootstrap": "2.1.2"
   },
   "scripts": {
-    "start": "npx nodemon server.js",
+    "start": "npm-run-all -l -p start:*",
+    "start:server": "nodemon server.js",
+    "start:client": "cd client && yarn start",
     "build": "cd client && yarn install && yarn build"
   }
 }

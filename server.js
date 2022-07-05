@@ -1,6 +1,5 @@
 const express = require('express');
 const cors = require('cors');
-import sslRedirect from 'heroku-ssl-redirect';
 const path = require('path');
 const mongoose = require('mongoose');
 
@@ -14,11 +13,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(sslRedirect());
 
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, '/client/build')));
-app.use(express.static(path.join(__dirname, '/client/public')));
 
 /* API ENDPOINTS */
 app.use('/api', productsRoutes);
