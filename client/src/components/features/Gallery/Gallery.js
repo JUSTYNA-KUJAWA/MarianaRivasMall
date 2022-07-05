@@ -9,7 +9,7 @@ const Gallery = () => {
     {
       category: 'Ceramique',
       alt: 'tools',
-      img: '/images/newArrivals/ceramique.jpg',
+      img: '/images/newArrivals/ceramique.png',
       banner: 'small',
       line: 'Ceramic',
     },
