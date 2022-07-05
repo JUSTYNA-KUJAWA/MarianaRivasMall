@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+import sslRedirect from 'heroku-ssl-redirect';
 const path = require('path');
 const mongoose = require('mongoose');
 
@@ -13,7 +14,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
+app.use(sslRedirect());
 /* API ENDPOINTS */
 app.use('/api', productsRoutes);
 app.use('/api', ordersRoutes);
