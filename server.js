@@ -49,7 +49,7 @@ db.on('error', err => {
 });
 
 /* START SERVER */
-const port = process.env.PORT || 8000;
-app.listen(port, () => {
-  console.log('Server is running on port: ' + port);
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+  console.log(`Server listening on ${PORT}`);
 });
