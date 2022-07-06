@@ -33,11 +33,8 @@ app.use('*', (req, res) => {
 
 
 /* MONGOOSE */
-const NODE_ENV = process.env.NODE_ENV;
-let dbUri = '';
-
-if(NODE_ENV === 'production')  dbUri = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.epgpr.mongodb.net/mariana?retryWrites=true&w=majority`;
- else dbUri = 'mongodb://localhost:27017/kurashi';
+dbUri = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.epgpr.mongodb.net/mariana?retryWrites=true&w=majority`;
+ 
  
   mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true });
 
