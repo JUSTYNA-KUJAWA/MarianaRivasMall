@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className={styles.root}>
       <div className={styles.logo}>
-        <p>Mariana Rivas Maal ArtShop@</p>
+        <p>MRMaal ArtShop@</p>
       </div>
       <div className={styles.navLinks}>
         <ul className={clsx(isNavExpanded && styles.isExpanded)}>

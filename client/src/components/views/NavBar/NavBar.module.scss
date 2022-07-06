@@ -95,7 +95,7 @@
         display: none;
         position: absolute;
         flex-direction: column;
-        background-color: $color-white;
+        background-color: rgb(90, 90, 83);
         top: 31px;
         left: -20px;
 
@@ -111,6 +111,128 @@
 
       .hamburger {
         display: block;
+        font-size: $base-size * 3;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .root {
+    .navLinks{
+      ul {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        background-color: rgb(90, 90, 83);
+        top: 31px;
+        left: -20px;
+
+        li {
+          text-align: center;
+          margin: 10px;
+        }
+
+        &.isExpanded {
+          display: block;
+        }
+      }
+
+      .hamburger {
+        display: block;
+        margin-right: 110px;
+        font-size: $base-size * 2;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .root {
+    .logo{
+      font-size: 15px;
+      text-align: right;
+    }
+    .navLinks{
+      ul {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        background-color: rgb(90, 90, 83);
+        top: 31px;
+        left: -20px;
+
+        li {
+          text-align: center;
+          margin: 10px;
+        }
+
+        &.isExpanded {
+          display: block;
+        }
+      }
+      .button {
+        color: $color-dark;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        transition: $transition;
+        font-size: $base-size;
+        color:white;
+        margin-left: 0px;
+  
+        &:hover {
+          color: orange;
+        }
+      }
+      .hamburger {
+        display: block;
+        padding-right: 50px;
+        font-size: $base-size * 2;
+      }
+    }
+  }
+}
+@media (max-width: 300px) {
+  .root {
+    .logo{
+      font-size: 15px;
+      text-align: right;
+    }
+    .navLinks{
+      ul {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        background-color: rgb(90, 90, 83);
+        top: 31px;
+        left: -20px;
+
+        li {
+          text-align: center;
+          margin: 10px;
+        }
+
+        &.isExpanded {
+          display: block;
+        }
+      }
+      .button {
+        color: $color-dark;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        transition: $transition;
+        font-size: $base-size;
+        color:white;
+        margin-left: 0px;
+  
+        &:hover {
+          color: orange;
+        }
+      }
+      .hamburger {
+        display: block;
+        padding-right: 40px;
+        font-size: $base-size * 2;
       }
     }
   }
