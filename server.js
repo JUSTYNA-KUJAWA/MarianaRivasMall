@@ -36,7 +36,7 @@ app.use('*', (req, res) => {
 dbUri = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.epgpr.mongodb.net/mariana?retryWrites=true&w=majority`;
  
  
-  mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
 db.once('open', () => {
